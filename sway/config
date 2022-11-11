@@ -1,0 +1,194 @@
+# Ber Gutman - 2022
+
+# Defaults
+set $mod Mod1
+set $term foot
+set $menu wofi --show drun
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Appearance
+font Hack Medium 9
+## Base16 Gruvbox dark, hard (https://github.com/morhetz/gruvbox)
+set $base00 #1d2021
+set $base01 #3c3836
+set $base02 #504945
+set $base03 #665c54
+set $base04 #bdae93
+set $base05 #d5c4a1
+set $base06 #ebdbb2
+set $base07 #fbf1c7
+set $base08 #fb4934
+set $base09 #fe8019
+set $base0A #fabd2f
+set $base0B #b8bb26
+set $base0C #8ec07c
+set $base0D #83a598
+set $base0E #d3869b
+set $base0F #d65d0e
+
+# Property Name         Border  BG      Text    Indicator Child Border
+client.focused          $base05 $base05 $base00 $base0D $base0D
+client.focused_inactive $base01 $base01 $base05 $base03 $base01
+client.unfocused        $base01 $base00 $base05 $base01 $base01
+client.urgent           $base08 $base08 $base00 $base08 $base08
+client.placeholder      $base00 $base00 $base05 $base00 $base00
+client.background       $base07
+
+# Gaps
+gaps inner 10
+gaps outer 10
+smart_gaps enabled
+
+### Display scaling for Nreal air glasses
+output 'Unknown nreal air 0x00008800' scale 1.45
+
+### Pixelbook touchpad settings
+input "6353:20520:ACPI0C50:00_18D1:5028_Touchpad" {
+	dwt enabled
+        tap enabled
+        natural_scroll enabled
+        middle_emulation enabled
+}
+
+### General key bindings
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+Backspace kill
+bindsym $mod+d exec $menu
+floating_modifier $mod normal
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+Escape exec swaynag -t warning -m 'Exit?' -B 'Y' 'swaymsg exit'
+bindsym $mod+Shift+s exec grim
+
+# Window focus key bindings
+bindsym $mod+$left focus left
+bindsym $mod+Left focus left
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+Left move left
+
+bindsym $mod+$down focus down
+bindsym $mod+Down focus down
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+Down move down
+
+bindsym $mod+$up focus up
+bindsym $mod+Up focus up
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+Up move up
+
+bindsym $mod+$right focus right
+bindsym $mod+Right focus right
+bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+Right move right
+
+# Workspace key bindings (I use a 40% keeb)
+bindsym $mod+1 workspace number 1
+bindsym $mod+q workspace number 1
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+q move container to workspace number 1
+
+bindsym $mod+2 workspace number 2
+bindsym $mod+w workspace number 2
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+w move container to workspace number 2
+
+bindsym $mod+3 workspace number 3
+bindsym $mod+e workspace number 3
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+e move container to workspace number 3
+
+bindsym $mod+4 workspace number 4
+bindsym $mod+r workspace number 4
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+r move container to workspace number 4
+
+bindsym $mod+5 workspace number 5
+bindsym $mod+t workspace number 5
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+t move container to workspace number 5
+
+bindsym $mod+6 workspace number 6
+bindsym $mod+y workspace number 6
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+y move container to workspace number 6
+
+bindsym $mod+7 workspace number 7
+bindsym $mod+u workspace number 7
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+u move container to workspace number 7
+
+bindsym $mod+8 workspace number 8
+bindsym $mod+i workspace number 8
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+i move container to workspace number 8
+
+bindsym $mod+9 workspace number 9
+bindsym $mod+o workspace number 9
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+o move container to workspace number 9
+
+bindsym $mod+0 workspace number 10
+bindsym $mod+p workspace number 10
+bindsym $mod+Shift+0 move container to workspace number 10
+bindsym $mod+Shift+p move container to workspace number 10
+
+# Layout bindings
+bindsym $mod+b splith
+bindsym $mod+v splitv
+# bindsym $mod+s layout stacking (I legit never use stacking)
+bindsym $mod+tab layout tabbed
+bindsym $mod+s layout toggle split
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+
+# Scratchpad (Disabled b/c I never remember to use it)
+# bindsym $mod+Shift+minus move scratchpad
+# bindsym $mod+minus scratchpad show
+
+# Resize mode config
+bindsym $mod+z mode "resize"
+
+mode "resize" {
+    bindsym $left resize shrink width 10px
+    bindsym Left resize shrink width 10px
+
+    bindsym $down resize grow height 10px
+    bindsym Down resize grow height 10px
+
+    bindsym $up resize shrink height 10px
+    bindsym Up resize shrink height 10px
+
+    bindsym $right resize grow width 10px
+    bindsym Right resize grow width 10px
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Status bar
+bar {
+    swaybar_command waybar
+    colors {
+        background $base00
+        separator  $base01
+        statusline $base04
+
+        # State             Border  BG      Text
+        focused_workspace   $base05 $base05 $base00
+        active_workspace    $base05 $base03 $base00
+        inactive_workspace  $base05 $base00 $base05
+        urgent_workspace    $base05 $base08 $base00
+        binding_mode        $base00 $base0A $base00
+    }
+}
+
+# Pixelbook fixes
+exec rmmod i2c_hid_acpi i2c_hid
+exec modprobe i2c_hid_acpi
+
+# Switch between Nreal air and laptop display
+exec kanshi

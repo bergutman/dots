@@ -1,0 +1,8 @@
+profile {
+	output eDP-1 disable
+	output "Unknown nreal air 0x00008800" scale 1.45
+}
+
+profile {
+	output eDP-1 enable scale 2
+}
