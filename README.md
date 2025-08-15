@@ -82,4 +82,14 @@ For more details, see the [xfce4/README.md](./xfce4/README.md).
 
 To use these dotfiles, you will need to copy the configuration files to the appropriate locations in your home directory. Please see the individual README files for more detailed instructions.
 
+## TODO:
+
+* Add `.bashrc`
+* Create install script
+* Add helix + cursor configs
+* Add llm cli stuff
+* Finish VLC + Spotify configs
+
 *Thanks for stopping by!*
+
+
