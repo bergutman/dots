@@ -16,6 +16,7 @@ Here are some screenshots of my desktop in action:
 
 This repository is organized into the following directories:
 
+*   `colors/`: Color scheme details (Earthsong).
 *   `firefox/`: Configuration for Firefox, including a custom theme and userChrome.css.
 *   `gtk-3.0/`: GTK theme and icon settings.
 *   `hypr/`: Configuration for the Hyprland Wayland compositor.
@@ -24,6 +25,11 @@ This repository is organized into the following directories:
 *   `xfce4/`: Configuration for the XFCE4 desktop environment.
 
 ## Details
+
+### Colors
+
+My color scheme is [Earthsong](https://github.com/Gogh-Co/Gogh/blob/master/themes/Earthsong.yml).
+For more details, see the [colors/README.md](./colors/README.md).
 
 ### Firefox
 
