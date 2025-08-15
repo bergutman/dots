@@ -1,5 +1,6 @@
 # XFCE4 WhiskerMenu
 ![screenshot of whiskermenu](screenshot.png)
+
 I have the following settings for WhiskerMenu.
 
 ## General
@@ -62,5 +63,5 @@ I have the following settings for WhiskerMenu.
   - Pattern: `!o`
   - Command: `exo-open --launch WebBrowser https://<OWUI IP/URL>?q=%u`
 - Perplexica
- - Pattern: `!a`
- - Command: `exo-open --launch WebBrowser https://<PERPLEXICA IP/URL>?q=%u`
+  - Pattern: `!a`
+  - Command: `exo-open --launch WebBrowser https://<PERPLEXICA IP/URL>?q=%u`
