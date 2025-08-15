@@ -1,0 +1,235 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="dark-mode" type="bool" value="true"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=8;x=768;y=1010"/>
+      <property name="length" type="double" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="size" type="uint" value="30"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="20"/>
+        <value type="int" value="2"/>
+        <value type="int" value="21"/>
+        <value type="int" value="13"/>
+        <value type="int" value="48"/>
+        <value type="int" value="4"/>
+        <value type="int" value="6"/>
+        <value type="int" value="9"/>
+        <value type="int" value="18"/>
+        <value type="int" value="23"/>
+        <value type="int" value="10"/>
+        <value type="int" value="8"/>
+        <value type="int" value="14"/>
+        <value type="int" value="5"/>
+        <value type="int" value="47"/>
+      </property>
+      <property name="mode" type="uint" value="0"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="enable-struts" type="bool" value="true"/>
+      <property name="length-adjust" type="bool" value="true"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="border-width" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="uint" value="1"/>
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="false"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="show-tooltips" type="bool" value="true"/>
+      <property name="sort-order" type="uint" value="2"/>
+      <property name="show-only-minimized" type="bool" value="false"/>
+      <property name="include-all-monitors" type="bool" value="true"/>
+    </property>
+    <property name="plugin-8" type="string" value="clock">
+      <property name="mode" type="uint" value="2"/>
+      <property name="show-week-numbers" type="bool" value="false"/>
+      <property name="digital-layout" type="uint" value="3"/>
+      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
+      <property name="digital-time-format" type="string" value="%I:%M %p"/>
+      <property name="digital-time-font" type="string" value="System-ui 8"/>
+      <property name="digital-date-font" type="string" value="System-ui 8"/>
+      <property name="timezone" type="string" value="America/Phoenix"/>
+    </property>
+    <property name="plugin-4" type="string" value="directorymenu">
+      <property name="base-directory" type="string" value="/home/ber"/>
+      <property name="open-folder" type="bool" value="true"/>
+    </property>
+    <property name="plugin-9" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="known-players" type="string" value="firefox;vlc"/>
+      <property name="rec-indicator-persistent" type="bool" value="false"/>
+    </property>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-5" type="string" value="systemload">
+      <property name="cpu" type="empty">
+        <property name="enabled" type="bool" value="true"/>
+        <property name="label" type="string" value=""/>
+      </property>
+      <property name="swap" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+      <property name="network" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+      <property name="memory" type="empty">
+        <property name="label" type="string" value=""/>
+        <property name="enabled" type="bool" value="true"/>
+      </property>
+      <property name="uptime" type="empty">
+        <property name="enabled" type="bool" value="false"/>
+      </property>
+    </property>
+    <property name="notes" type="empty">
+      <property name="global" type="empty">
+        <property name="version" type="string" value="1.12.0"/>
+        <property name="background-color" type="string" value="GTK+"/>
+        <property name="tabs-position" type="int" value="3"/>
+      </property>
+    </property>
+    <property name="plugin-47" type="string" value="netload"/>
+    <property name="plugin-48" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17537335385.desktop"/>
+      </property>
+      <property name="disable-tooltips" type="bool" value="false"/>
+      <property name="show-label" type="bool" value="false"/>
+    </property>
+    <property name="plugin-14" type="string" value="clock">
+      <property name="digital-layout" type="uint" value="2"/>
+      <property name="digital-date-format" type="string" value="%m/%d/%Y"/>
+    </property>
+    <property name="plugin-21" type="string" value="genmon">
+      <property name="command" type="string" value="/home/ber/.config/hypr/scripts/workspace-genmon.sh"/>
+      <property name="use-label" type="bool" value="false"/>
+      <property name="text" type="string" value="Workspaces"/>
+      <property name="update-period" type="int" value="250"/>
+      <property name="enable-single-row" type="bool" value="true"/>
+      <property name="font" type="string" value="Sans 10"/>
+    </property>
+    <property name="plugin-20" type="string" value="whiskermenu">
+      <property name="favorites" type="array">
+      </property>
+      <property name="view-mode" type="int" value="2"/>
+      <property name="button-icon" type="string" value="randr"/>
+      <property name="button-single-row" type="bool" value="false"/>
+      <property name="show-button-title" type="bool" value="true"/>
+      <property name="button-title" type="string" value="GNU/LINUX "/>
+      <property name="position-categories-horizontal" type="bool" value="false"/>
+      <property name="position-categories-alternate" type="bool" value="false"/>
+      <property name="position-profile-alternate" type="bool" value="false"/>
+      <property name="position-search-alternate" type="bool" value="false"/>
+      <property name="position-commands-alternate" type="bool" value="false"/>
+      <property name="profile-shape" type="int" value="1"/>
+      <property name="stay-on-focus-out" type="bool" value="true"/>
+      <property name="recent" type="array">
+        <value type="string" value="nwg-look.desktop"/>
+        <value type="string" value="cursor.desktop"/>
+        <value type="string" value="org.pulseaudio.pavucontrol.desktop"/>
+        <value type="string" value="firefox-bin.desktop"/>
+        <value type="string" value="zzz-gimp.desktop"/>
+        <value type="string" value="xfce4-dict.desktop"/>
+        <value type="string" value="org.xfce.Catfish.desktop"/>
+        <value type="string" value="xfce4-appfinder.desktop"/>
+        <value type="string" value="blueman-manager.desktop"/>
+      </property>
+      <property name="search-actions" type="int" value="9">
+        <property name="action-0" type="empty">
+          <property name="name" type="string" value="Man Pages"/>
+          <property name="pattern" type="string" value="!m"/>
+          <property name="command" type="string" value="exo-open --launch TerminalEmulator man %s"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-1" type="empty">
+          <property name="name" type="string" value="Search Google"/>
+          <property name="pattern" type="string" value="!g"/>
+          <property name="command" type="string" value="exo-open --launch WebBrowser https://google.com/search?q=%u"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-2" type="empty">
+          <property name="name" type="string" value="Search for Files"/>
+          <property name="pattern" type="string" value="-"/>
+          <property name="command" type="string" value="catfish --path=~ --start %s"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-3" type="empty">
+          <property name="name" type="string" value="Wikipedia"/>
+          <property name="pattern" type="string" value="!w"/>
+          <property name="command" type="string" value="exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-4" type="empty">
+          <property name="name" type="string" value="Run in Terminal"/>
+          <property name="pattern" type="string" value="&gt;"/>
+          <property name="command" type="string" value="xfce4-terminal -e &quot;bash -c &apos;%s; exec bash&apos;&quot;"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-5" type="empty">
+          <property name="name" type="string" value="Open URI"/>
+          <property name="pattern" type="string" value="^(file|http|https):\/\/(.*)$"/>
+          <property name="command" type="string" value="exo-open \0"/>
+          <property name="regex" type="bool" value="true"/>
+        </property>
+        <property name="action-6" type="empty">
+          <property name="name" type="string" value="Dictionary"/>
+          <property name="pattern" type="string" value="!d"/>
+          <property name="command" type="string" value="xfce4-dict %s"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-7" type="empty">
+          <property name="name" type="string" value="Open WebUI"/>
+          <property name="pattern" type="string" value="!o"/>
+          <property name="command" type="string" value="exo-open --launch WebBrowser https://chat.gutman.earth?q=%u"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+        <property name="action-8" type="empty">
+          <property name="name" type="string" value="Perplexica"/>
+          <property name="pattern" type="string" value="!a"/>
+          <property name="command" type="string" value="exo-open --launch WebBrowser https://ask.gutman.earth?q=%u"/>
+          <property name="regex" type="bool" value="false"/>
+        </property>
+      </property>
+      <property name="command-lockscreen" type="string" value="hyprlock"/>
+      <property name="show-command-logoutuser" type="bool" value="true"/>
+      <property name="command-logout" type="string" value="hyprctl exit"/>
+      <property name="show-command-logout" type="bool" value="false"/>
+      <property name="command-logoutuser" type="string" value="hyprctl dispatch exit"/>
+      <property name="show-command-restart" type="bool" value="true"/>
+      <property name="command-restart" type="string" value="sudo reboot"/>
+      <property name="show-command-shutdown" type="bool" value="true"/>
+      <property name="command-shutdown" type="string" value="sudo shutdown -h now"/>
+      <property name="show-command-hibernate" type="bool" value="true"/>
+      <property name="command-hibernate" type="string" value="sudo hibernate"/>
+      <property name="show-command-suspend" type="bool" value="false"/>
+      <property name="show-command-profile" type="bool" value="false"/>
+      <property name="show-command-menueditor" type="bool" value="true"/>
+    </property>
+    <property name="plugin-10" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17539132041.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-18" type="string" value="power-manager-plugin"/>
+    <property name="plugin-6" type="string" value="xfce4-clipman-plugin"/>
+    <property name="plugin-23" type="string" value="genmon">
+      <property name="command" type="string" value="/home/ber/.config/hypr/scripts/network-genmon.sh"/>
+      <property name="use-label" type="bool" value="false"/>
+      <property name="text" type="string" value="(genmon)"/>
+      <property name="update-period" type="int" value="60000"/>
+      <property name="enable-single-row" type="bool" value="true"/>
+      <property name="font" type="string" value="System-ui 10"/>
+    </property>
+  </property>
+</channel>

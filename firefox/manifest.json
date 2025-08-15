@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Earthsong Custom",
+  "theme": {
+    "images": {},
+    "properties": {},
+    "colors": {
+      "toolbar": "rgb(217, 208, 201)",
+      "toolbar_text": "rgb(0, 0, 0)",
+      "frame": "rgb(144, 128, 112)",
+      "tab_background_text": "rgb(255, 255, 255)",
+      "toolbar_field": "rgb(255, 255, 255)",
+      "toolbar_field_text": "rgb(0, 0, 0)",
+      "tab_line": "rgb(217, 208, 201)",
+      "popup": "rgb(144, 128, 112)",
+      "popup_text": "rgb(0, 0, 0)",
+      "tab_loading": "rgb(217, 208, 201)"
+    }
+  }
+}
