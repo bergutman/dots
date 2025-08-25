@@ -39,6 +39,9 @@ if [ -n "$1" ]; then
             NEXT_MODE="hibernate-ram"
             ;;
         "hibernate-ram")
+            NEXT_MODE="lock"
+            ;;
+        "lock")
             NEXT_MODE="focus"
             ;;
         "focus")
@@ -62,6 +65,10 @@ if [ -n "$1" ]; then
             ln -sf ~/.config/hypr/hypridle-hibernate-ram.conf ~/.config/hypr/hypridle.conf
             start_hypridle
             ;;
+        "lock")
+            ln -sf ~/.config/hypr/hypridle-lock.conf ~/.config/hypr/hypridle.conf
+            start_hypridle
+            ;;
         "focus")
             ln -sf ~/.config/hypr/hypridle-focus.conf ~/.config/hypr/hypridle.conf
             # Do nothing, hypridle is already killed
@@ -82,6 +89,10 @@ case "$CURRENT_MODE" in
     "hibernate-ram")
         ICON="media-memory" # hibernate-ram
         TOOLTIP="Idle: hibernate-ram"
+        ;;
+    "lock")
+        ICON="lock" # lock
+        TOOLTIP="Idle: lock"
         ;;
     "focus")
         ICON="stock_lock-open" # disabled

@@ -9,6 +9,7 @@ These are my personal configuration files for the Hyprland Wayland compositor an
 -   `hyprland.conf`: The main configuration file for Hyprland. It defines keybindings, window rules, aesthetics, autostart applications, etc.
 -   `hypridle-hibernate.conf`: Configures `hypridle` to lock the screen and hibernate the system after a short period of inactivity.
 -   `hypridle-hibernate-ram.conf`: Configures `hypridle` to lock the screen and hibernate the system to RAM after a short period of inactivity.
+-   `hypridle-lock.conf`: Configures `hypridle` to lock the screen without hibernating after a short period of inactivity.
 -   `hypridle-focus.conf`: A `hypridle` configuration for 'focus' mode, which effectively disables idle-related actions.
 -   `hyprlock.conf`: Configures `hyprlock`, the screen locker. It defines the appearance of the lock screen, including the background and password input field.
 -   `hyprsunset.conf`: Configures `hyprsunset`, which adjusts the screen's color temperature based on the time of day to reduce eye strain.
