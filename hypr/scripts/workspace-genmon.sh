@@ -17,8 +17,18 @@
    - bash
 COMMENT
 
+# Convert workspace number to grid format (e.g., 5 → A5, 15 → B5, 25 → C5)
+convert_ws_to_grid() {
+    local ws_num=$1
+    local row=$(( (ws_num - 1) / 10 ))  # 0 for 1-10, 1 for 11-20, etc.
+    local col=$(( (ws_num - 1) % 10 + 1 )) # 1-10
+    local row_letter=$(printf "%b" "\\x$(printf '%x' "$((65 + row))")") # 0→A, 1→B, etc.
+    echo "${row_letter}${col}"
+}
+
 # Get active workspace
-ACTIVE_WS=$(hyprctl activeworkspace -j | jq -r '.name')
+ACTIVE_WS_NUM=$(hyprctl activeworkspace -j | jq -r '.name')
+ACTIVE_WS=$(convert_ws_to_grid "$ACTIVE_WS_NUM")
 
 # Get active window info
 WIN_INFO=$(hyprctl activewindow -j)
@@ -31,7 +41,7 @@ if [[ ${#WIN_TITLE} -gt 40 ]]; then
 fi
 
 # Genmon output
-echo "<txt>WS$ACTIVE_WS - $WIN_TITLE</txt>"
+echo "<txt>WS-$ACTIVE_WS - $WIN_TITLE</txt>"
 echo "<css>
 .genmon_value {font-weight: bold; padding: 0 5px;}
 </css>"
